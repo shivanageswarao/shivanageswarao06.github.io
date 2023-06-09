@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcomme to sun <b>n</b> sand restaraunt</h1>
+    <h2>book Your Room</h2>
+    <div class="form2">
+<form class="resort" method="post" onsubmit="return ok()">
+<label>FULLNAME:</label>
+<input type="text" id="name2" placeholder="enter your name" required><br></br>
+<Label>MOBILE NUMBER:</Label>
+<input type="tel" id="name3"  placeholder="mobile number" required><br></br>
+<label>GENDER:</label>
+<label>
+    <input type="radio" name="gender" value="male" required>Male
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female">Female
+  </label>
+  <label>
+    <input type="radio" name="gender" value="other">Other
+  </label><br>
+  <label for=" ROOM COST">ROOM COST:</label>
+  <label>
+<input type="checkbox" value="AC-5000/-" required >AC-5000/-
+</label>
+  <label>
+    <input type="checkbox" value="AC-5000/-" required >NON-AC-3500/-
+  </label><br>
+  <label for="PAYMENT MODE">PAYMENT MODE :</label>
+  <select name="payment" id="payment" required>
+    <option value="">None</option>
+    <option value="phomne pay">Phone Pay</option>
+    <option value="gpay">Gpay</option>
+    <option value="paytm">Paytm</option>
+  </select><br>
+<label for="Room Type">ROOM TYPE:</label>
+<select name="room" id="room type" required>
+  <option value="">None</option>
+  <option value="ac">AC</option>
+  <option value="non ac">NON AC</option>
+</select>
+        <input type="submit" plaecholder="book now" value="book now" onsubmit="return ok()">
+            <br></br>
+            <input type="reset" value="Reset" class="reset">
+
+        </form>
+    </div>
+    <script>
+        function ok() { 
+            var x= document.getElementById("name2").value;
+            confirm(" hiii " + x + " your room is booked thanks for visiting and visit once agian!!!!");
+
+        }
+        
+    </script>
+</body>
+</html>
+    
